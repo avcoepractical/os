@@ -59,3 +59,22 @@ printf("%d\t",arr[i]);
 }
 }
 }
+
+/*
+OUTPUT
+ENTER ELEMENTS IN ARRAY:
+14
+5
+27
+10
+18
+9
+Parent class execution:
+Parent Process Id=3427
+Sorted array elements in ascending order are:
+5 10 14 18 27
+Child class execution:
+Child Process Id=3428
+Sorted array elements in descending order are:
+27 18 14 10 5
+  */

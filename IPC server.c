@@ -9,8 +9,7 @@ int main()
 {
 int n;
 puts("Server");
-char strMessage[5000];//[] = {"welcome", "to", "the", "module.", "This", "will", "now",
-"stop"};
+char strMessage[5000];//[] = {"welcome", "to", "the", "module.", "This", "will", "now","stop"};
 int fd = open("fifo6.txt", O_WRONLY);
 int fd2 = open ("fifo7.txt", O_RDONLY);
 if(fd == -1)
@@ -31,8 +30,7 @@ int res;
 char Len;
 //while(1)
 {
-printf("\n\n\t\tEnter the Message to be passed (hitting ENTER without any string will
-terminate program): ");
+printf("\n\n\t\tEnter the Message to be passed (hitting ENTER without any string willterminate program): ");
 fgets(strMessage, 100, stdin);
 char L = (char) strlen(strMessage);
 //printf("\n\tLength of the given string: %d\n", (L-1));
@@ -46,8 +44,7 @@ int len2;
 res = read(fd2, &len2, 1);
 //if(len2 == 1)//since null counts 1
 //break;
-read(fd2, stringBuffer, 5000); //Read String Characters
-printf("\nServer Received: %s\n", stringBuffer);
+read(fd2, stringBuffer, 5000); //Read String Charactersprintf("\nServer Received: %s\n", stringBuffer);
 stringBuffer[(int)len2] = 0;
 };
 //printf("\n\nCLIENT CLOSED\n")
